@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './ListItem.style.scss';
+import './NavItem.style.scss';
 
 const ListItem: React.FC = ({ children }) => {
 	return <li className='listItem'>{children}</li>;
