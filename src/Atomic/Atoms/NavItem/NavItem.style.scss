@@ -1,0 +1,29 @@
+@import '../../Styles/variables.scss';
+
+.listItem {
+	font-size: $font-size-nav;
+	font-weight: $font-weight-bold;
+	list-style: none;
+	position: relative;
+
+	&:hover {
+		color: $color-primary;
+		&::before {
+			display: unset;
+		}
+	}
+
+	&::before {
+		height: 2px;
+		width: 100%;
+		position: absolute;
+		bottom: -7.5px;
+		background: $color-primary;
+		content: '';
+		display: none;
+	}
+
+	&:not(:last-of-type) {
+		margin-right: 4rem;
+	}
+}
