@@ -1,0 +1,10 @@
+header,
+.headerLeft {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.headerLeft > ul {
+	margin-left: 15rem;
+}
